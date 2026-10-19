@@ -9,14 +9,8 @@ struct reg_estudiantes{
     float promedio;
 
 } estudiante[5];
-
-
-
   int main(){
     string buscar;
-
-    //registro de alumnos
-
     for(int i=0; i < 5; i++)
     {
 
@@ -32,13 +26,9 @@ struct reg_estudiantes{
         cout <<"Ingresa el promedio del estudiante" << endl;
         cin >> estudiante[i].promedio;
     }
-
     
-    // Mostrar datos de los alumnos inscritos
     cout << "Alumnos Inscritos" << endl;    
     for(int i=0; i < 5; i++){
-         
-
         cout << "Nombre:" << estudiante[i].nombre << endl;
         cout << "Carrera:" << estudiante[i].carrera << endl;
         cout << "Semestre Actual:" << estudiante[i].semestre << endl;
@@ -46,10 +36,6 @@ struct reg_estudiantes{
         cout << "-------------------------------------------" << endl;
 
     }
-
-    //Buscar alumnos
-
- 
 
     cout << "Ingresa el nombre del alumno que quieres buscar: ";
     cin >> buscar;
@@ -68,10 +54,6 @@ struct reg_estudiantes{
             cout <<"Alumno no registrado en el sistema" << endl;
         }
     }
-
-
-    //Busqueda por carrera 
-
     cout << "Ingresa la carrera que quieres buscar: ";
     cin >> buscar;
 
@@ -85,7 +67,5 @@ struct reg_estudiantes{
             cout << "Promedio: " << estudiante[i].promedio << endl;
         }
     }
-
-
     return 0;
 }
